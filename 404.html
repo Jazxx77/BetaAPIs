@@ -5,10 +5,10 @@
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css" type="text/css" media="all" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0">
 	<title>404 not found</title>
-	<script src="https://hadi-api.github.io/assets/js/function.js" type="text/javascript" charset="utf-8"></script>
-	<link href="https://hadi-api.github.io/assets/font/digital/index.css" rel="stylesheet" type="text/css"/>
+	<script src="https://betakey.vercel.app/assets/js/function.js" type="text/javascript" charset="utf-8"></script>
+	<link href="https://betakey.vercel.app/assets/font/digital/index.css" rel="stylesheet" type="text/css"/>
 	<style type="text/css" media="all">
-	@import: url('https://hadi-api.github.io/assets/font/digital/index.css');
+	@import: url('https://betakey.vercel.app/assets/font/digital/index.css');
 		body {
 			background: #0E102F;
 			font-family: normal;
@@ -99,7 +99,7 @@
 		source = a.querySelector('a#source')
 		list = ["https://youtu.be/Ngq0omaP8Xg","https://youtu.be/Ew7I1C75rVw","https://youtu.be/KrT9pd6bVR4"];
 		random = list[Math.floor(Math.random() * list.length)]
-		fetch("https://hadi-api.herokuapp.com/api/yt2/video?url="+random).then(res=>res.json()).then(res=> {
+		fetch("https://betakey.vercel.app/api/yt2/video?url="+random).then(res=>res.json()).then(res=> {
 			video.setAttribute("src", res.result.download_video || "Null");
 			video.setAttribute("poster",res.result.thumb)
 			source.setAttribute('href',random)
@@ -153,7 +153,7 @@
 
 		jalan(true, 'run1',
 			`{[<br><tab></tab>]creator: 'muhammad hadi firmansya',[<br><tab></tab>]	status: 404,[<br><tab></tab>]	msg: '[[!]] 404 not found'[<br>]}`, 70, 100)
-		jalan(true, 'run2', `[<tab></tab>]silahkan kembali ke dokumentasi api click [<a href='https://hadi-api.herokuapp.com/api'>here</a>]`, 50)
+		jalan(true, 'run2', `[<tab></tab>]silahkan kembali ke dokumentasi api click [<a href='https://betakey.vercel.app/api'>here</a>]`, 50)
 	}
 	</script>
 </body>

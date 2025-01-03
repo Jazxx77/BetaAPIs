@@ -7,7 +7,7 @@
 	<!--<base href="https://hadi-api.github.io/" />-->
 	<style type="text/css" media="all">
 		body {
-			background: URL(//hadi-api.github.io/assets/image/keqing_wangy.jpg) no-repeat center center fixed;
+			background: URL(//betakey.vercel.app/assets/image/keqing_wangy.jpg) no-repeat center center fixed;
 			-webkit-background-size: cover;
 			-moz-background-size: cover;
 			-o-background-size: cover;
@@ -49,7 +49,7 @@
 		var i = -1
 		var home, filename
 		var last = [];
-		var path = ["https://hadi-api.github.io"]
+		var path = ["https://betakey.vercel.app"]
 		function render(url, size) {
 			if (!url.includes('/git/blobs/')) {
 				fetch(`${unescape(url)}`).then(res=>res.json()).then(res=> {
